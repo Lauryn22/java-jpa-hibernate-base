@@ -2,9 +2,11 @@
 package fr.m2i.java.jpa.hibernate.dao;
 
 import fr.m2i.java.jpa.hibernate.helper.SessionHelper;
+import java.util.List;
 import fr.m2i.java.jpa.hibernate.model.Role;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
+import javax.persistence.Query;
 
 public class RoleDAO {
 
@@ -12,6 +14,11 @@ public class RoleDAO {
 
     public RoleDAO() {
         this.entityManager = SessionHelper.getEntityManager();
+    }
+    
+    public List<Role> findAll() {
+        Query findAllQuery = entityManager.createQuery("select r from Role r");
+        return findAllQuery.getResultList();
     }
 
     public Role findById(Long id) {
@@ -94,4 +101,5 @@ public class RoleDAO {
             }
         }
     }
+    
 }
