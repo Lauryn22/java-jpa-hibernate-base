@@ -11,13 +11,12 @@ public class SessionHelper {
     private static EntityManager entityManager;
     
     public static EntityManager getEntityManager() {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("site_commerce_pu");
-        EntityManager em = emf.createEntityManager();
-        if (em == null){
-            entityManager = em;
-            return entityManager;
-        }else {
-            return entityManager; 
+        
+        if (entityManager == null){
+            EntityManagerFactory emf = Persistence.createEntityManagerFactory("site_commerce_pu");
+            entityManager = emf.createEntityManager();
+            return entityManager;     
         }
+         return entityManager; 
     }
 }
