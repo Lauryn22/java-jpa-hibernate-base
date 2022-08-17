@@ -55,4 +55,15 @@ public class Role {
     public String toString() {
         return "Role{" + "idRole=" + idRole + ", identifiant=" + identifiant + ", description=" + description + '}';
     }
+    
+    public void copy(Role roleData) {
+
+        if (roleData.getIdentifiant() != null) {
+            this.setIdentifiant(roleData.getIdentifiant());
+        }
+
+        if (roleData.getDescription()!= null) {
+            this.setDescription(roleData.getDescription());
+        }
+    }
 }
