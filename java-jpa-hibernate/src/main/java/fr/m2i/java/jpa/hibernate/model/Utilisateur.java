@@ -181,4 +181,47 @@ public class Utilisateur {
                 + ", dateModification=" + dateModification
                 + ", dateNaissance=" + dateNaissance + '}';
     }
+    
+    public void copy(Utilisateur userData) {
+
+        if (userData.getCivilite()!= null) {
+            this.setCivilite(userData.getCivilite());
+        }
+        
+        if (userData.getNom()!= null) {
+            this.setNom(userData.getNom());
+        }
+        
+        if (userData.getPrenom()!= null) {
+            this.setPrenom(userData.getPrenom());
+        }
+        
+        if (userData.getIdentifiant() != null) {
+            this.setIdentifiant(userData.getIdentifiant());
+        }
+        
+        if (userData.getMotPasse()!= null) {
+            this.setMotPasse(userData.getMotPasse());
+        }
+        
+        if (userData.getActif()!= null) {
+            this.setActif(userData.getActif());
+        }
+        
+        if (userData.getMarquerEffacer()!= null) {
+            this.setMarquerEffacer(userData.getMarquerEffacer());
+        }
+        
+        if (userData.getDateCreation()!= null) {
+            this.setDateCreation(userData.getDateCreation());
+        }
+        
+        if (userData.getDateModification()!= null) {
+            this.setDateModification(userData.getDateModification());
+        }
+        
+        if (userData.getDateNaissance()!= null) {
+            this.setDateNaissance(userData.getDateNaissance());
+        }
+    }
 }
