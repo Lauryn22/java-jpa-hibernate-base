@@ -25,7 +25,7 @@ public class RoleDAO {
         Role founded = entityManager.find(Role.class, id);
 
         if (founded == null) {
-            System.out.println("Attention le role avec l'id : " + id + " n'exsiste pas !");
+            System.out.println("Attention le role avec l'id : " + id + " n'existe pas !");
         }
 
         return founded;
