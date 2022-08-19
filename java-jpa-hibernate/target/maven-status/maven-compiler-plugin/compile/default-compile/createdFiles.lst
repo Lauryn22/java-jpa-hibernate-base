@@ -1,6 +1,8 @@
 fr\m2i\java\jpa\hibernate\dao\RoleDAO.class
 fr\m2i\java\jpa\hibernate\dao\UtilisateurDAO.class
 fr\m2i\java\jpa\hibernate\JavaJpaHibernate.class
+fr\m2i\java\jpa\hibernate\model\Adresse.class
+fr\m2i\java\jpa\hibernate\dao\AdresseDAO.class
 fr\m2i\java\jpa\hibernate\model\Utilisateur.class
 fr\m2i\java\jpa\hibernate\helper\SessionHelper.class
 fr\m2i\java\jpa\hibernate\model\Role.class
