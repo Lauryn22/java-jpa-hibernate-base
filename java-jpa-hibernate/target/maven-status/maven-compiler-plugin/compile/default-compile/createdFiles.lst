@@ -1,5 +1,7 @@
+fr\m2i\java\jpa\hibernate\dao\ProduitDAO.class
 fr\m2i\java\jpa\hibernate\dao\RoleDAO.class
 fr\m2i\java\jpa\hibernate\dao\UtilisateurDAO.class
+fr\m2i\java\jpa\hibernate\model\Produit.class
 fr\m2i\java\jpa\hibernate\JavaJpaHibernate.class
 fr\m2i\java\jpa\hibernate\model\Adresse.class
 fr\m2i\java\jpa\hibernate\dao\AdresseDAO.class
