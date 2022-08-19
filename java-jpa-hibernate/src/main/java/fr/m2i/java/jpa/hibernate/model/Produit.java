@@ -95,6 +95,11 @@ public class Produit {
         this.reference = reference;
         this.stock = stock;
     }
+
+    public Produit() {
+    }
+    
+  
     
     @Override
     public String toString() {
